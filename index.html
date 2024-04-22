@@ -59,21 +59,15 @@
           <li><a class="nav-link scrollto" href="#portfolio">Hình Ảnh</a></li>
           
           <li><a href="https://gaubonghadong@blogspot.com/" target="_blank">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Thông Tin</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="#"><span>Quảng Cáo</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Thông Tin 1</a></li>
-              <li class="dropdown"><a href="#"><span>Thông Tin 2</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Thông Tin 1</a></li>
-                  <li><a href="#">Thông Tin 2</a></li>
-                  <li><a href="#">Thông Tin 3</a></li>
-                  <li><a href="#">Thông Tin 4</a></li>
-                  <li><a href="#">Thông Tin 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Thông Tin 2</a></li>
-              <li><a href="#">Thông Tin 3</a></li>
-              <li><a href="#">Thông Tin 4</a></li>
+              <li><a href="https://gaubonghadong@blogspot.com/" target="_blank">Gấu Bông Hà Đông</a></li>
+              <li ><a href="#">Quảng Cáo 2</a> </li>
+                
+        
+              <li><a href="#">Quảng Cáo 2</a></li>
+              <li><a href="#">Quảng Cáo 3</a></li>
+              <li><a href="#">Quảng Cáo 4</a></li>
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#contact">Liên Hệ</a></li>
@@ -165,7 +159,7 @@
             <div class="well-middle">
               <div class="single-well">
                 <a href="#">
-                  <h4 class="sec-head">Sổ Media</h4>
+                  <h4 class="sec-head">Sổ Media <div class="spinner-grow text-info"></div></h4>
                 </a>
                 <p>
                   Chúng tôi là một câu lạc bộ truyền thông tại PTIT. Tại Sổ Media, bạn có thể phát triển hơn nữa kỹ năng truyền thông của mình, mở rộng mạng lưới cũng như tham gia nhiều hoạt động thú vị và năng động.
@@ -462,6 +456,7 @@
     </div><!-- End Team Section -->
 
     <!-- ======= Rviews Section ======= -->
+    
     <div class="reviews-area">
       <div class="row g-0">
         <div class="col-lg-6">
@@ -485,6 +480,34 @@
             <div class="section-headline text-center">
               <h2>Hình Ảnh</h2>
             </div>
+            <div class="section-headline text-center">
+              <div class="container mt-1">
+                <button type="button" class="btn btn-primary ready-btn" id="toastbtn">Bật Mí</button>
+                <div class="toast" style="position: fixed; /* Cố định vị trí */
+                top: 30%; /* Vị trí 50% theo chiều cao */
+                left: 70%; /* Vị trí 50% theo chiều ngang */
+                transform: translate(-50%, -50%);">
+                  <div class="toast-header">
+                    <strong class="me-auto">Sổ Media</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                  </div>
+                  <div class="toast-body">
+                    <p>Nơi Bạn Có Thể Tìm Nửa Kia Của Cuộc Đời Mình</p>
+                  </div>
+                </div>
+              </div>
+              
+              <script>
+              document.getElementById("toastbtn").onclick = function() {
+                var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+                var toastList = toastElList.map(function(toastEl) {
+                  return new bootstrap.Toast(toastEl)
+                })
+                toastList.forEach(toast => toast.show()) 
+              }
+              </script>
+            </div>
+
           </div>
         </div>
         <div class="row wesome-project-1 fix">
@@ -792,12 +815,73 @@
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
             <div class="suscribe-text text-center">
               <h3>Chào Mừng Bạn Đến Với <span> Sổ</span> Media</h3>
-              <a class="sus-btn" href="#">Bắt Đầu</a>
+              
+              <a class=" sus-btn " href="#"> Bắt Đầu</a>
             </div>
           </div>
         </div>
       </div>
     </div><!-- End Suscribe Section -->
+    <div class="section-two mt-5" >
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="inner-box">
+              <div class="inner-title">
+                <h1>Câu hỏi thường gặp</h1>
+              </div>
+              <div class="inner-body">
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        Sổ Media ra đời khi nào?
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Sổ Media ra đời năm 2016 - Nơi tụ hội của những người yêu thích, đam mê lĩnh vực nhiếp ảnh, quay phim, truyền thông.
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Khi nào sổ Media tuyển thành viên mới?
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Sổ Media tuyển thành viên mới vào các đợt chào tân mỗi năm
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Vào Sổ Media được gì?
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                      data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        Chúng tôi là một câu lạc bộ truyền thông tại PTIT. Tại Sổ Media, bạn có thể phát triển hơn nữa kỹ năng truyền thông của mình, mở rộng mạng lưới cũng như tham gia nhiều hoạt động thú vị và năng động.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- ======= Contact Section ======= -->
     <div id="contact" class="contact-area">
@@ -875,11 +959,6 @@
                   </div>
                   <div class="form-group mt-3">
                     <textarea class="form-control" name="message" rows="5" placeholder="Nội Dung" required></textarea>
-                  </div>
-                  <div class="my-3">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
                   </div>
                   <div class="text-center"><button type="submit">Gửi Tin Nhắn</button></div>
                 </form>
